@@ -307,6 +307,7 @@ function Tour() {
         )}
       </Stack>
       <Modal
+        transitionDuration={0}
         opened={
           active !== undefined &&
           active !== TourButtons.haenge &&
@@ -344,6 +345,7 @@ function Tour() {
         }
       </Modal>
       <Modal
+        transitionDuration={0}
         opened={
           active !== undefined &&
           (active === TourButtons.haenge || active === TourButtons.pappel)
@@ -372,6 +374,7 @@ function Tour() {
         }
       </Modal>
       <Modal
+        transitionDuration={0}
         opened={activeValidate !== undefined}
         closeOnClickOutside
         withCloseButton={false}
@@ -433,6 +436,7 @@ function Tour() {
       </Modal>
 
       <Modal
+        transitionDuration={0}
         opened={activeDoubleCheck !== undefined}
         closeOnClickOutside
         withCloseButton={false}

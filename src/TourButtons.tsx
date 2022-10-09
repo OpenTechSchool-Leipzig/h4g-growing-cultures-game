@@ -195,9 +195,7 @@ export const TourButtons = {
                 Städtepartnerschaft Leipzig-Travnik e.V.
               </a>
             </li>
-            \n
           </ul>
-          \n",
         </>
       ),
     } as TourButton,
