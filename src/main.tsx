@@ -7,22 +7,27 @@ import App from './App'
 import Intro from './Intro'
 import Tour from './Tour'
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />,
+      children: [
+        {
+          path: 'intro',
+          element: <Intro />,
+        },
+        {
+          path: 'tour/:tourId',
+          element: <Tour />,
+        },
+      ],
+    },
+  ],
   {
-    path: '/',
-    element: <App />,
-    children: [
-      {
-        path: 'intro',
-        element: <Intro />,
-      },
-      {
-        path: 'tour/:tourId',
-        element: <Tour />,
-      },
-    ],
-  },
-])
+    basename: '/game',
+  }
+)
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
