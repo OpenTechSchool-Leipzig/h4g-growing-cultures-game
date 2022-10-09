@@ -399,6 +399,12 @@ function Tour() {
             sx={(theme) => ({
               backgroundColor: 'white',
               color: theme.colors.orange[4],
+              '::selection': {
+                backgroundColor: theme.colors.orange[0],
+              },
+              ':hover': {
+                backgroundColor: theme.colors.orange[0],
+              },
             })}
             radius="lg"
             uppercase
@@ -468,10 +474,26 @@ function Tour() {
 
               setTrees(curr)
               setActiveDoubleCheck(undefined)
+
+              let target = undefined
+
+              if (activeDoubleCheck?.treeId === 0) {
+                target = TourButtons.pappelInfos[activeDoubleCheck!.id]
+              } else {
+                target = TourButtons.haengeInfos[activeDoubleCheck!.id]
+              }
+
+              setActive(target)
             }}
             sx={(theme) => ({
               backgroundColor: 'white',
               color: theme.colors.orange[4],
+              '::selection': {
+                backgroundColor: theme.colors.orange[0],
+              },
+              ':hover': {
+                backgroundColor: theme.colors.orange[0],
+              },
             })}
             radius="lg"
             uppercase
