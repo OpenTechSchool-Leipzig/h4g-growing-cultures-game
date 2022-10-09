@@ -35,6 +35,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       withGlobalStyles
       withNormalizeCSS
       theme={{
+        fontFamily: '"Exo 2"',
         colors: {
           teal: [
             '#dcfffd',

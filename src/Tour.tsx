@@ -92,15 +92,18 @@ function Tour() {
         {/* first  */}
         {started && (
           <>
-            <Stack align="center" spacing={'xl'}>
-              <p>
-                <Text size="xl" weight="bolder" align="center">
-                  Pyramiden Pappel
-                </Text>
-                <Text size="lg" weight="lighter" align="center">
-                  Italien
-                </Text>
-              </p>
+            <Stack align="center" spacing={'lg'} style={{ margin: '2rem' }}>
+              <Text size="xl" weight="bolder" align="center">
+                Pyramiden Pappel
+              </Text>
+              <Text
+                size="lg"
+                weight="lighter"
+                align="center"
+                style={{ marginTop: '-1.5rem' }}
+              >
+                Italien
+              </Text>
 
               <Button
                 color="primary"
@@ -195,15 +198,18 @@ function Tour() {
                 )}
             </Stack>
 
-            <Stack align="center" spacing={'xl'}>
-              <p>
-                <Text size="xl" weight="bolder" align="center">
-                  Hänge-Silber-Linde
-                </Text>
-                <Text size="lg" weight="lighter" align="center">
-                  Bosnien und Herzegowina
-                </Text>
-              </p>
+            <Stack align="center" spacing={'lg'} style={{ margin: '2rem' }}>
+              <Text size="xl" weight="bolder" align="center">
+                Hänge-Silber-Linde
+              </Text>
+              <Text
+                size="lg"
+                weight="lighter"
+                align="center"
+                style={{ marginTop: '-1.5rem' }}
+              >
+                Bosnien und Herzegowina
+              </Text>
 
               <Button
                 color="primary"
